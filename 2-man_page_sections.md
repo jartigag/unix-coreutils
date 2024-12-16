@@ -3,7 +3,6 @@ date: 2024-12-15
 source: "Bite Size Linux" (Julia Evans)
 ---
 # man page sections
-
 - man pages are split up into 8 sections
   `man 2 read` means "get me the man page for read from section 2".
 - There's both a program called "read" and a sysstem call called "read",
