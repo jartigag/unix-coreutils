@@ -5,6 +5,7 @@ source: "Bite Size Linux" (Julia Evans)
 # file descriptors and pipes
 
 ## file descriptors
+
 - Unix systems use integers to track open files. These integers are called file descriptors.
 - `lsof` (list open files) will show you a process's open files.
 - File descriptors can refer to:
@@ -17,10 +18,12 @@ source: "Bite Size Linux" (Julia Evans)
     > Not everything on Unix is a file, but lots of things are.
 - When you read or write to a file / pipe / network connection, you do that using a file descriptor.
 - Let's see how some simple Python code works under the hood:
+
   ```python
   f = open("file.txt")
   f.readlines()
   ```
+
   - Behind the scenes:
 - (Almost) every process has 3 standard FDs:
   - stdin: 0
@@ -29,6 +32,7 @@ source: "Bite Size Linux" (Julia Evans)
   - stderr: 2
 
 ## pipes
+
 - Sometimes you want to send the output of one process to the input of another.
 - A pipe is a pair of 2 magical file descriptors: stdin (pipe input) and stdout (pipe output).
 - Pipes are one way. You can't write to output.
