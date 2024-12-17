@@ -66,7 +66,7 @@ filesystems, "all is a file", users/groups, processes, signals.
 > # Shell[^02]
 > A shell is a special-purpose program designed to read commands typed by a user and execute appropriate programs in response to those commands.
 > Such a program is sometimes known as a command interpreter.
-> Whereas on some operating systems the command interpreter is an integral part of the kernel, on UNIX systems, the shell is a user process. 
+> Whereas on some operating systems the command interpreter is an integral part of the kernel, on UNIX systems, the shell is a user process.
 > The shells are designed not merely for interactive use, but also for the interpretation of shell scripts, which are text files containing shell commands.
 > For this purpose, each of the shells has the facilities typically associated with programming languages: variables, loop and conditional statements, I/O commands, and functions.
 
